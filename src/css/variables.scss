@@ -5,10 +5,68 @@ $colorPrimary: #6abf17;
 
 /* property btn */
 @mixin btn {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 20px;
     background-color: $colorSecondary;
     color: #fff;
     text-transform: uppercase;
-  }
+    font-weight: bold;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      border: #fff solid 4px;
+      border-radius: 20px;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      opacity: 0;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &:focus {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &:active {
+      &:before {
+        opacity: 1;
+      }
+    }
+}
+
+/* property text */
+
+@mixin textPrimary {
+  text-transform: uppercase;
+  color: #777777;
+}
+
+@mixin textSecondary{
+  text-transform: uppercase;
+  color: #aaaaaa;
+}
+
+/* position elm */
+
+@mixin positionElm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
