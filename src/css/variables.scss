@@ -1,0 +1,14 @@
+/* colors */
+
+$colorSecondary: #1775bf;
+$colorPrimary: #6abf17;
+
+/* property btn */
+@mixin btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: $colorSecondary;
+    color: #fff;
+    text-transform: uppercase;
+  }
