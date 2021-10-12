@@ -1,11 +1,13 @@
 <template>
     <div class="hero-box-container">
         <div class="hero-box">
-            <div class="hero-text">
-                <h4>moving without the hassle</h4>
-                <h1>we make it simple</h1>
-                <h4>professional service with quality and customer satisfaction</h4>
-            </div>
+            <XyzTransition xyz="fade duration-30">
+                <div class="hero-text" v-if="text">
+                    <h4>moving without the hassle</h4>
+                    <h1>we make it simple</h1>
+                    <h4>professional service with quality and customer satisfaction</h4>
+                </div>
+            </XyzTransition>
         </div>
         <div class="get">
             <a href="#"><i class="far fa-paper-plane"></i>get a free quote online now!</a>
@@ -14,7 +16,15 @@
 </template>
 <script>
 export default {
-    name: 'Hero'
+    name: 'Hero',
+    data() {
+        return {
+            text: false
+        }
+    },
+    mounted() {
+        this.text = true;
+    }
 }
 </script>
 
