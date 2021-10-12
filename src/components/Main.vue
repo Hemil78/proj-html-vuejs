@@ -2,18 +2,21 @@
   <div id="app">
     <Award/>
     <FullService/>
+    <Move/>
   </div>
 </template>
 
 <script>
 import Award from './Award.vue'
 import FullService from './FullService.vue'
+import Move from './Move.vue'
 
 export default {
   name: 'Main',
   components: {
     Award,
-    FullService
+    FullService,
+    Move
   }
 }
 </script>
