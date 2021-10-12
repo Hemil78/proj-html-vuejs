@@ -26,7 +26,7 @@ export default {
 .box-award{
     width: 100%;
     @include positionElm;
-    background-color: #f8fbfc;
+    background-color: $bgColorSection;
     min-height: 600px;
 
     .text-award{
@@ -42,9 +42,7 @@ export default {
             margin-bottom: 30px;
         }
         p{
-            line-height: 40px;
-            font-weight: bold;
-            color: #777777;
+           @include parStyle; 
         }
         button{
             @include btn;

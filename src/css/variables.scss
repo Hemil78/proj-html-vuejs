@@ -2,6 +2,7 @@
 
 $colorSecondary: #1775bf;
 $colorPrimary: #6abf17;
+$bgColorSection: #f3f2f2;
 
 /* property btn */
 @mixin btn {
@@ -66,6 +67,13 @@ $colorPrimary: #6abf17;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* paragraph style */
+@mixin parStyle{
+  line-height: 40px;
+  font-weight: bold;
+  color: #777777;
 }
 
 
