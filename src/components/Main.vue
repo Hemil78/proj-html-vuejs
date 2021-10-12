@@ -3,6 +3,7 @@
     <Award/>
     <FullService/>
     <Move/>
+    <Testimonial/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Award from './Award.vue'
 import FullService from './FullService.vue'
 import Move from './Move.vue'
+import Testimonial from './Testimonial.vue'
 
 export default {
   name: 'Main',
   components: {
     Award,
     FullService,
-    Move
+    Move,
+    Testimonial
   }
 }
 </script>
