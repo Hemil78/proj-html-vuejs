@@ -71,10 +71,18 @@ $bgColorSection: #f3f2f2;
 }
 
 /* paragraph style */
+
 @mixin parStyle{
   line-height: 40px;
   font-weight: bold;
   color: #777777;
+}
+
+/* position img */
+
+@mixin positionImage{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

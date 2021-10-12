@@ -4,6 +4,7 @@
     <FullService/>
     <Move/>
     <Testimonial/>
+    <Request/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Award from './Award.vue'
 import FullService from './FullService.vue'
 import Move from './Move.vue'
 import Testimonial from './Testimonial.vue'
+import Request from './Request.vue'
 
 export default {
   name: 'Main',
@@ -19,7 +21,8 @@ export default {
     Award,
     FullService,
     Move,
-    Testimonial
+    Testimonial,
+    Request
   }
 }
 </script>
