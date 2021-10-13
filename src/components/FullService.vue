@@ -9,20 +9,19 @@
                 <h2>Full-Service Solution</h2>
             </div>
 
-            <div class="img-fullService">
 
-                <div class="box-card" v-for="(card, index) in cards" :key="index">
-                    <div class="img-card">
-                        <img :src="card.url">
+                <XyzTransitionGroup class="img-fullService" :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade small out-down out-rotate-right appear-stagger">
+                    <div class="box-card" v-for="(card, index) in cards" :key="index">
+                        <div class="img-card">
+                            <img :src="card.url">
+                        </div>
+                        <div class="text-card">
+                            <h3>{{card.title}}</h3>
+                            <p>{{card.text}}</p>
+                            <button>read more</button>
+                        </div>
                     </div>
-                    <div class="text-card">
-                        <h3>{{card.title}}</h3>
-                        <p>{{card.text}}</p>
-                        <button>read more</button>
-                    </div>
-                </div>
-
-            </div>
+                </XyzTransitionGroup>
 
         </div>
 
