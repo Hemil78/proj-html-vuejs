@@ -24,13 +24,16 @@
                 </div>
 
                 <div class="nav-header">
+                    
                     <div class="nav">
-                        <ul>
-                            <li v-for="(link, index) in menu" :key="index">
-                                <a :href="link.url" :class="{active : link.current}">{{link.text}}</a>
+                        <XyzTransitionGroup tag="ul" class="item-group" xyz="fade stagger">
+                            <li v-for="(link, index) in menu" :key="index" class="square xyz-in" xyz="inherit up">
+                                <a :href="link.url" :class="{active : link.current}" v-if="true">{{link.text}}</a>
                             </li>
-                        </ul>
+                        </XyzTransitionGroup>
+
                     </div>
+
                     <button>free quote</button>
                 </div>
 
@@ -177,6 +180,11 @@ export default {
                 align-items: center;
                 ul{
                     list-style: none;
+                    &:root {
+                        --xyz-translate-default: 300%;
+                        --xyz-ease-default: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                        --xyz-stagger-default: 0.1s;
+                    }
                     li{
                         display: inline-block;
                         
@@ -204,3 +212,7 @@ export default {
 
 
 </style>
+
+
+
+
