@@ -1,16 +1,19 @@
 <template>
     <section class="box-footer">
         <FooterUp/>
+        <FooterDown/>
     </section>
 </template>
 
 <script>
 import FooterUp from './FooterUp.vue'
+import FooterDown from './FooterDown.vue'
 
 export default {
   name: 'Footer',
   components: {
-    FooterUp
+    FooterUp,
+    FooterDown
   }
 }
 </script>
