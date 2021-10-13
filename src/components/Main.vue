@@ -5,6 +5,7 @@
     <Move/>
     <Testimonial/>
     <Request/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import FullService from './FullService.vue'
 import Move from './Move.vue'
 import Testimonial from './Testimonial.vue'
 import Request from './Request.vue'
+import Footer from './Footer.vue'
 
 export default {
   name: 'Main',
@@ -22,7 +24,8 @@ export default {
     FullService,
     Move,
     Testimonial,
-    Request
+    Request,
+    Footer
   }
 }
 </script>
