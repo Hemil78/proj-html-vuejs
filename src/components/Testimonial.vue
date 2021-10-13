@@ -5,8 +5,8 @@
         <div class="container">
 
             <div class="text-testimonials">
-                <h4>we are a professional</h4>
-                <h2>Full-Service Solution</h2>
+                <h4>happy customers</h4>
+                <h2>Testimonials</h2>
             </div>
 
             <div class="img-testimonials">
@@ -96,6 +96,7 @@ export default {
             .img-card{
                 width: 100%;
                 text-align: center;
+                overflow: hidden;
 
                 img{
                     width: 150px;

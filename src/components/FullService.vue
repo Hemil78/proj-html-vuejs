@@ -94,9 +94,14 @@ export default {
 
             .img-card{
                 width: 100%;
+                overflow: hidden;
 
                 img{
                     width: 100%;
+                    transition: transform 7s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
             }
             .text-card{

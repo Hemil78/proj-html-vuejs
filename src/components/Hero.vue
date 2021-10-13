@@ -1,17 +1,23 @@
 <template>
     <div class="hero-box-container">
+
         <div class="hero-box">
-            <XyzTransition xyz="fade duration-30">
-                <div class="hero-text" v-if="text">
+            <XyzTransition class="hero-text" xyz>
+                <div class="title-text" v-if="text">
                     <h4>moving without the hassle</h4>
                     <h1>we make it simple</h1>
                     <h4>professional service with quality and customer satisfaction</h4>
-                </div>
+                </div>    
             </XyzTransition>
         </div>
+
         <div class="get">
             <a href="#"><i class="far fa-paper-plane"></i>get a free quote online now!</a>
         </div>
+            
+                
+            
+       
     </div>
 </template>
 <script>
@@ -19,11 +25,13 @@ export default {
     name: 'Hero',
     data() {
         return {
-            text: false
+            text: false,
+            icon: false
         }
     },
     mounted() {
         this.text = true;
+        this.icon = true;
     }
 }
 </script>
@@ -33,7 +41,8 @@ export default {
 @import '../css/commons.scss';
 .hero-box-container{
     width: 100%;
-        .hero-box{
+
+    .hero-box{
         width: 100%;
         min-height: 590px;
         background-image: url(../images/avada-movers-homeherobackground-final.jpg);
@@ -47,6 +56,8 @@ export default {
 
             text-align: center;
             margin-top: 80px;
+            --xyz-opacity: 0;
+            --xyz-duration: 4s;
 
             h4{
                 @include textPrimary;
@@ -85,6 +96,8 @@ export default {
         }
     }
 }
+
+        
 
 
 </style>
