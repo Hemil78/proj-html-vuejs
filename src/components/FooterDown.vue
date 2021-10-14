@@ -108,7 +108,7 @@ export default {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background-color: $colorSecondary;
+        border:5px solid $colorSecondary;
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -121,7 +121,7 @@ export default {
         } 
         
         i{
-            color: #fff;
+            color: $colorSecondary;
             font-size: 35px;
         }
     }

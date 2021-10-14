@@ -11,27 +11,32 @@
             </XyzTransition>
         </div>
 
-        <div class="get">
-            <a href="#"><i class="far fa-paper-plane"></i>get a free quote online now!</a>
-        </div>
-            
+        
+            <XyzTransition class="get" xyz="fade left-100%">
+                <div v-if="text">
+                    <a href="#">get a free quote online now!<i class="fas fa-truck"></i></a>
+                </div>
                 
+            </XyzTransition>
+
             
-       
+        
+        <!-- *  <div class="square" ></div>  */  -->    
     </div>
+    
 </template>
+             
+            
 <script>
 export default {
     name: 'Hero',
     data() {
         return {
-            text: false,
-            icon: false
+            text: false
         }
     },
     mounted() {
         this.text = true;
-        this.icon = true;
     }
 }
 </script>
@@ -44,18 +49,17 @@ export default {
 
     .hero-box{
         width: 100%;
-        min-height: 590px;
+        height: calc(100vh - 45px);
+        position: relative;
         background-image: url(../images/avada-movers-homeherobackground-final.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include positionElm;
 
         .hero-text {
 
             text-align: center;
-            margin-top: 80px;
+            margin-bottom: 50px;
             --xyz-opacity: 0;
             --xyz-duration: 4s;
 
@@ -73,25 +77,30 @@ export default {
         
     }
     .get{
-        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-height: 120px;
         background-color: $colorSecondary;
         @include positionElm;
+        --xyz-duration: 4s;
 
         a{
             text-decoration: none;
             color:#fff;
             text-transform: uppercase;
             letter-spacing: 5px;
-            padding: 60px 0;
             transition: .3s;
             &:hover{
                 font-weight: bold;
             }
 
             i{
-                margin-right: 10px;
-                font-size: 20px;
+                margin-left: 20px;
+                font-size: 50px;
                 transition: .3s;
+                vertical-align: middle;
             }
         }
     }

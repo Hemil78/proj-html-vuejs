@@ -9,7 +9,8 @@
                 <h2>Testimonials</h2>
             </div>
 
-            <div class="img-testimonials">
+            <XyzTransitionGroup class="img-testimonials" 
+                :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade small out-down out-rotate-right appear-stagger">
 
                 <div class="box-card" v-for="(card, index) in cards" :key="index">
                     <div class="img-card">
@@ -21,8 +22,9 @@
                         <button>read more testimonials</button>
                     </div>
                 </div>
+                
 
-            </div>
+            </XyzTransitionGroup>
 
         </div>
 

@@ -1,5 +1,7 @@
 <template>
   <section class="box-move">
+      
+    
       <div class="text-move">
           <h4>we remove the headache from moving</h4>
           <h2>Move With Ease</h2>
@@ -7,6 +9,9 @@
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur fugiat voluptatum labore suscipit eum numquam. Provident voluptatibus veniam sint fuga optio?</p>
           <button>get a free quote now</button>
       </div>
+    
+        
+
   </section>
 </template>
 
