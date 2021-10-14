@@ -113,7 +113,7 @@ export default {
         align-items: center;
         justify-content: center; 
         position: fixed;
-        z-index: 998;
+        z-index: 600;
         opacity: 0.5;
         transition: .3s;
         &:hover{

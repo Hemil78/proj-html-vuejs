@@ -46,6 +46,7 @@ export default {
 @import '../css/commons.scss';
 .hero-box-container{
     width: 100%;
+    z-index: 700;
 
     .hero-box{
         width: 100%;
@@ -54,6 +55,7 @@ export default {
         background-image: url(../images/avada-movers-homeherobackground-final.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: 800;
         @include positionElm;
 
         .hero-text {
@@ -83,8 +85,9 @@ export default {
         right: 0;
         min-height: 120px;
         background-color: $colorSecondary;
+        z-index: 998;
         @include positionElm;
-        --xyz-duration: 4s;
+        --xyz-duration: 3s;
 
         a{
             text-decoration: none;

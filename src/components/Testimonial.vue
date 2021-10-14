@@ -19,7 +19,7 @@
                     <div class="text-card">
                         <h3>{{card.title}}</h3>
                         <p>{{card.text}}</p>
-                        <button>read more testimonials</button>
+                        <button class="btn-test">read more testimonials</button>
                     </div>
                 </div>
                 
@@ -57,7 +57,8 @@ export default {
                     text: '"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla quibusdam temporibus atque fugiat ullam itaque"'
                 }
                 
-            ]
+            ],
+            upHere : false
             
         }
     }
@@ -94,6 +95,9 @@ export default {
 
         .box-card{
             width: calc(100% / 3);
+            &:hover .btn-test{
+                opacity: 1;
+            }
             
             .img-card{
                 width: 100%;
@@ -122,7 +126,8 @@ export default {
                 button{
                     @include btn;
                     margin-top: 100px;
-                    
+                    opacity: 0;
+                    transition: .5s;
                 }
 
             }
