@@ -52,7 +52,7 @@ export default {
             {
                 name: 'fab fa-facebook-f',
                 url: '#',
-                current: true
+                current: false
             },
             {
                 name: 'fab fa-twitter',
@@ -74,7 +74,7 @@ export default {
             {
                 text: 'Home',
                 url: '#',
-                current: true
+                current: false
             },
             {
                 text: 'Rates',
@@ -194,7 +194,7 @@ export default {
                             font-weight: bold;
                             color: #000;
 
-                            &.active{
+                            &:hover{
                                 color: $colorPrimary;
                             }
                         }

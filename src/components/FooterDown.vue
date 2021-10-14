@@ -119,7 +119,6 @@ export default {
         &:hover{
             opacity: 1;
         } 
-        
         i{
             color: $colorSecondary;
             font-size: 35px;

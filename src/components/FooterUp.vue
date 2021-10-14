@@ -56,7 +56,7 @@ export default {
             {
                 text: 'Home',
                 url: '#',
-                current: true
+                current: false
             },
             {
                 text: 'Rates',
@@ -154,7 +154,7 @@ export default {
                    color: #000; 
                    text-decoration: none;
                    font-weight: bold;
-                    &.active{
+                    &:hover{
                         color: $colorPrimary;
                     }
 
