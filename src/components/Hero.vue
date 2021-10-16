@@ -53,6 +53,7 @@ export default {
         height: calc(100vh - 45px);
         position: relative;
         background-image: url(../images/avada-movers-homeherobackground-final.jpg);
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 800;

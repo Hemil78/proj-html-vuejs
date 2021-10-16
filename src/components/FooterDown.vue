@@ -116,9 +116,15 @@ export default {
         z-index: 600;
         opacity: 0.5;
         transition: .3s;
+        animation: mymove 3s infinite;
         &:hover{
             opacity: 1;
-        } 
+        }
+        @keyframes mymove {
+            0% {bottom: 20px;}
+            50% {bottom: 50px;}
+            100% {bottom: 20px;}
+        }  
         i{
             color: $colorSecondary;
             font-size: 35px;
