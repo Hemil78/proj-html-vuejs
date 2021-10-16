@@ -16,7 +16,7 @@
 
                 <div class="avada-footer-up">
                     <h4>avada movers</h4>
-                    <XyzTransitionGroup tag="ul" :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade down-100% back-5 stagger-6">
+                    <XyzTransitionGroup tag="ul" :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade down-100% back-5 stagger-4">
                     
                         <li v-for="(link, index) in menu" :key="index">
                             <a :href="link.url" :class="{active : link.current}">
@@ -30,7 +30,7 @@
             <div class="section-footer-up">
                 <div class="avada-footer-up">
                     <h4>recent posts</h4>
-                    <XyzTransitionGroup tag="ul" :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade down-100% back-5 stagger-6">
+                    <XyzTransitionGroup tag="ul" :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade down-100% back-5 stagger-4 delay-20">
                         <li v-for="(post, index) in posts" :key="index">
                             <a :href="post.url" :class="{active : post.current}">
                                 <i class="fas fa-chevron-right"></i> {{post.text}}
