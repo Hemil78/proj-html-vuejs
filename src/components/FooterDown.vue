@@ -113,7 +113,7 @@ export default {
         align-items: center;
         justify-content: center; 
         position: fixed;
-        z-index: 600;
+        z-index: 1;
         opacity: 0.5;
         transition: .3s;
         animation: mymove 3s infinite;

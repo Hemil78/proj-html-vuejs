@@ -10,23 +10,31 @@
                     <h4>professional service with quality and customer satisfaction</h4>
                 </div>    
             </XyzTransition>
+
+            <Form/>
+
         </div>
 
         
-            <XyzTransition class="get" xyz="fade left-100%">
-                <div v-if="text">
-                    <a href="#">get a free quote online now!<i class="fas fa-truck"></i></a>
-                </div>
-            </XyzTransition>
-                
+        <XyzTransition class="get" xyz="fade left-100%">
+            <div v-if="text">
+                <a href="#">get a free quote online now!<i class="fas fa-truck"></i></a>
+            </div>
+        </XyzTransition>
+               
     </div>
     
 </template>   
              
             
 <script>
+import Form from './Form.vue'
+
 export default {
     name: 'Hero',
+    components: {
+        Form
+    },
     data() {
         return {
             text: false
@@ -44,7 +52,7 @@ export default {
 
 .hero-box-container{
     width: 100%;
-    z-index: 700;
+    z-index: 2;
 
     .hero-box{
         width: 100%;
@@ -54,7 +62,7 @@ export default {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: 800;
+        z-index: 3;
         @include positionElm;
 
         .hero-text {
@@ -84,7 +92,7 @@ export default {
         right: 0;
         min-height: 120px;
         background-color: $colorSecondary;
-        z-index: 998;
+        z-index: 5;
         @include positionElm;
         --xyz-duration: 3s;
 

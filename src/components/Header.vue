@@ -167,7 +167,7 @@ export default {
     background-color: transparent;
     position: absolute;
     top: 45px;
-    z-index: 999;
+    z-index: 4;
 
     .box-header-down{
         display: flex;
