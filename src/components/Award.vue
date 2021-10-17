@@ -1,17 +1,25 @@
 <template>
   <section class="box-award">
-      <div class="text-award">
-          <h4>headache free</h4>
-          <h2>Award Winning<br>Moving Company</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur fugiat voluptatum labore suscipit eum numquam. Provident voluptatibus veniam sint fuga optio?</p>
-          
-          <button>read our testimonials</button>
-      </div>
+
+      <XyzTransition class="text-award" 
+                    xyz="fade left-100% duration-15" 
+                    appear-visible>
+
+            <div class="animation1">
+                <h4>headache free</h4>
+                <h2>Award Winning<br>Moving Company</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur fugiat voluptatum labore suscipit eum numquam. Provident voluptatibus veniam sint fuga optio?</p>
+                
+                <button>read our testimonials</button>
+            </div>
+            
+      </XyzTransition>
+
   </section>
 </template>
 
-<script>
 
+<script>
 
 export default {
   name: 'Award',

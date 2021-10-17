@@ -10,7 +10,10 @@
             </div>
 
 
-            <XyzTransitionGroup class="img-fullService" :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade small out-down out-rotate-right appear-stagger">
+            <XyzTransitionGroup class="img-fullService" 
+                                :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" 
+                                xyz="fade small out-down out-rotate-right appear-stagger delay-3">
+
                 <div class="box-card" v-for="(card, index) in cards" :key="index">
                     <div class="img-card">
                         <img :src="card.url">
@@ -21,6 +24,7 @@
                         <button>read more</button>
                     </div>
                 </div>
+
             </XyzTransitionGroup>
 
         </div>
@@ -67,13 +71,13 @@ export default {
 
 .box-fullService{
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
 
     .text-fullService{
         width: 100%;
         text-align: center;
         padding: 10px 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         h4{
             @include textSecondary;

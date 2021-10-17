@@ -1,5 +1,6 @@
 <template>
     <section class="container">
+        
         <div class="box-footer-up">
 
             <div class="section-footer-up">

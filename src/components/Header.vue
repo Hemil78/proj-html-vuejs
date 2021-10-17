@@ -1,11 +1,14 @@
 <template>
     <header>
+
         <div class="header-up">
 
             <div class=" box-header-up container">
+
                 <div class="call">
                      <a href="#"><i class="fas fa-phone"></i> Call us for a Free Quote 1.800.555.6789</a>                                               
                 </div>
+
                 <div class="icons-header">
                     <ul>
                         <li v-for="(icon, index) in icons" :key="index">
@@ -13,10 +16,13 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
+
         </div>
                     
         <div class="header-down">
+
             <div class="box-header-down container">
 
                 <div class="logo-header">
@@ -26,7 +32,8 @@
                 <div class="nav-header">
                     
                     <div class="nav">
-                        <XyzTransitionGroup tag="ul" class="item-group" xyz="fade stagger">
+
+                        <XyzTransitionGroup tag="ul" class="item-group" xyz="fade stagger delay-15">
                             <li v-for="(link, index) in menu" :key="index" class="square xyz-in" xyz="inherit up">
                                 <a :href="link.url" :class="{active : link.current}" v-if="true">{{link.text}}</a>
                             </li>
@@ -40,6 +47,7 @@
             </div>
 
         </div>
+        
     </header>
 </template>
 

@@ -1,36 +1,32 @@
 <template>
   <section class="box-move">
       
-    <XyzTransition :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade flip-right rotate-right right-100% duration-15">
-      <div class="text-move" v-if="text">
-          <h4>we remove the headache from moving</h4>
-          <h2>Move With Ease</h2>
-          <hr>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur fugiat voluptatum labore suscipit eum numquam. Provident voluptatibus veniam sint fuga optio?</p>
-          <button>get a free quote now</button>
-      </div>
+    
+    <XyzTransition class="text-move"  
+
+        xyz="fade flip-right rotate-right right-100% duration-15" 
+        appear-visible>
+        <div class="animation3">
+            <h4>we remove the headache from moving</h4>
+            <h2>Move With Ease</h2>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur?</p>
+            <button>get a free quote now</button>
+        </div>
+        
     </XyzTransition>
+    
         
 
   </section>
 </template>
+        
 
 <script>
 
 
 export default {
-  name: 'Move',
-  components: {
-      
-  },
-  data() {
-        return {
-            text: false
-        }
-    },
-    mounted() {
-        this.text = true;
-    }
+  name: 'Move'
 }
 </script>
 

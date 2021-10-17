@@ -10,7 +10,8 @@
             </div>
 
             <XyzTransitionGroup class="img-testimonials" 
-                :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" xyz="fade small out-down out-rotate-right appear-stagger">
+                :appear-visible="{ threshold: 0.5, rootMargin: '50px' }" 
+                xyz="fade small out-down out-rotate-right appear-stagger delay-3">
 
                 <div class="box-card" v-for="(card, index) in cards" :key="index">
                     <div class="img-card">
@@ -57,8 +58,8 @@ export default {
                     text: '"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla quibusdam temporibus atque fugiat ullam itaque"'
                 }
                 
-            ],
-            upHere : false
+            ]
+            
             
         }
     }

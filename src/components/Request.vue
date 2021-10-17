@@ -1,10 +1,18 @@
 <template>
   <section class="box-request">
-      <div class="text-request">
-          <h2>Request A Free Quote</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur fugiat voluptatum labore.</p>
-          <button>click here</button>
-      </div>
+
+      <XyzTransition class="text-request" 
+
+            xyz="fade left-100% duration-15" 
+            appear-visible>
+            <div class="animation2">
+                <h2>Request A Free Quote</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore expedita, eaque delectus dolorem, fugit hic sequi aspernatur fugiat voluptatum labore.</p>
+                <button>click here</button>
+            </div>
+
+      </XyzTransition>
+
   </section>
 </template>
 

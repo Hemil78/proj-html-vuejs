@@ -1,4 +1,5 @@
 <template>
+
     <div class="hero-box-container">
 
         <div class="hero-box">
@@ -16,15 +17,11 @@
                 <div v-if="text">
                     <a href="#">get a free quote online now!<i class="fas fa-truck"></i></a>
                 </div>
-                
             </XyzTransition>
-
-            
-        
-        <!-- *  <div class="square" ></div>  */  -->    
+                
     </div>
     
-</template>
+</template>   
              
             
 <script>
@@ -44,6 +41,7 @@ export default {
 <style scoped lang="scss">
 
 @import '../css/commons.scss';
+
 .hero-box-container{
     width: 100%;
     z-index: 700;

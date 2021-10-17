@@ -18,7 +18,7 @@
         </div>
 
         <a href="#">
-            <div class="square">
+            <div class="hand-up">
                 <i class="far fa-hand-point-up"></i>
             </div>
         </a>
@@ -101,7 +101,7 @@ export default {
             }
         }
     }
-    .square{
+    .hand-up{
         position: absolute;
         bottom: 30px;
         right: 20px;
